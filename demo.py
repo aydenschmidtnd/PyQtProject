@@ -31,7 +31,7 @@ class MainWindow(QMainWindow):
 
         self.setWindowTitle("Widgets App")
 
-        layout = QVBoxLayout()
+        layout_col1 = QVBoxLayout()
         widgets = [
             QCheckBox,
             QComboBox,
@@ -52,10 +52,10 @@ class MainWindow(QMainWindow):
         ]
 
         for w in widgets:
-            layout.addWidget(w())
+            layout_col1.addWidget(w())
 
         widget = QWidget()
-        widget.setLayout(layout)
+        widget.setLayout(layout_col1)
 
         # Set the central widget of the Window. Widget will expand
         # to take up all the space in the window by default.
